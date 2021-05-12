@@ -1,0 +1,7 @@
+{
+  "name": "Presión Arterial",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
