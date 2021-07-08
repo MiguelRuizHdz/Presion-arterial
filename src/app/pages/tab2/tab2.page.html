@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+    <ion-toolbar color="primary">
+        <ion-title>
+            Registros
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+    <ion-slides [options]="sliderOpts" *ngIf="dataLocalService.registros.length === 0" mode="ios" pager="ios" scrollbar="ios">
+        <ion-slide>
+            <h1>No hay registros</h1>
+        </ion-slide>
+    </ion-slides>
+    <app-registros [registros]="dataLocalService.registros"></app-registros>
+
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-card>
+    <ion-card-header>
+        <ion-card-subtitle>
+            <span class="text-primary">{{ registro.fecha }}</span>
+        </ion-card-subtitle>
+        <ion-card-subtitle>
+            <span *ngIf="registro.resultado==='Presión baja'" class="s1">{{ registro.resultado }}</span>
+            <span *ngIf="registro.resultado==='Presión normal'" class="s2">{{ registro.resultado }}</span>
+            <span *ngIf="registro.resultado==='Hipertensión leve'" class="s3">{{ registro.resultado }}</span>
+            <span *ngIf="registro.resultado==='Hipertensión moderada'" class="s4">{{ registro.resultado }}</span>
+            <span *ngIf="registro.resultado==='Hipertensión severa'" class="s5">{{ registro.resultado }}</span>
+            <span *ngIf="registro.resultado==='Hipertensión diastólica aislada'" class="s6">{{ registro.resultado }}</span>
+            <span *ngIf="registro.resultado==='Hipertensión sistólica aislada'" class="s7">{{ registro.resultado }}</span>
+        </ion-card-subtitle>
+
+    </ion-card-header>
+
+    <ion-card-content>
+        <p>
+            Su edad: {{ registro.edad}} años
+        </p>
+        <p>
+            Su presión arterial: {{ registro.sistolica }}/{{ registro.diastolica }} mmHg
+        </p>
+    </ion-card-content>
+</ion-card>
