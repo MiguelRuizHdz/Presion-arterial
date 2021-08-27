@@ -29,3 +29,6 @@ Run `npm install`
 
 ### Personalizar la configuración 
 Ver [Referencia de configuración](https://ionicframework.com/docs/intro/cli).
+
+## Ejecutar app Desktop
+`npx cap open @capacitor-community/electron`
